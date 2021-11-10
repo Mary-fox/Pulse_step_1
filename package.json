@@ -48,7 +48,6 @@
     "blob": "^0.0.5",
     "brace-expansion": "^1.1.11",
     "braces": "^2.3.2",
-    "browser-sync": "^2.26.5",
     "browser-sync-client": "^2.26.4",
     "browser-sync-ui": "^2.26.4",
     "browserslist": "^4.6.1",
@@ -153,11 +152,7 @@
     "global-prefix": "^1.0.2",
     "glogg": "^1.0.2",
     "graceful-fs": "^4.1.15",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean-css": "^4.2.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^5.0.0",
     "gulplog": "^1.0.0",
     "has-ansi": "^2.0.0",
     "has-binary2": "^1.0.3",
@@ -400,7 +395,12 @@
     "yeast": "^0.1.2"
   },
   "devDependencies": {
-    "gulp-cli": "^2.3.0"
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
