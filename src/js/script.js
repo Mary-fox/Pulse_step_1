@@ -98,4 +98,28 @@ $(document).ready(function() {
         });
         return false;
     });
+
+    //Smooth scroll and pageup
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    //$('a[href^="#"').click(function() {
+    //    var _href = $(this).attr('href');
+    //    $('html, body').animate({ scrollTop: $(_htef).offset().top + 'px' });
+    //   return false;
+    //  });
+
+    $("a.scroll-to").on("click", function(e) {
+        e.preventDefault();
+        var anchor = $(this).attr('href');
+        $('html, body').stop().animate({
+            scrollTop: $(anchor).offset().top - 60
+        }, 800);
+    });
 });
