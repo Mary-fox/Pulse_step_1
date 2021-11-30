@@ -108,18 +108,9 @@ $(document).ready(function() {
             $('.pageup').fadeOut();
         }
     });
-
-    //$('a[href^="#"').click(function() {
-    //    var _href = $(this).attr('href');
-    //    $('html, body').animate({ scrollTop: $(_htef).offset().top + 'px' });
-    //   return false;
-    //  });
-
-    $("a.scroll-to").on("click", function(e) {
-        e.preventDefault();
-        var anchor = $(this).attr('href');
-        $('html, body').stop().animate({
-            scrollTop: $(anchor).offset().top - 60
-        }, 800);
+    $("a[href=#up]").click(function() {
+        const _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+        return false;
     });
 });
